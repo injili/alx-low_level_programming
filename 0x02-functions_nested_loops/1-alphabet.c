@@ -8,5 +8,6 @@ int main()
 		_putchar(c);
 	
 	_putchar('\n');
+	
 	return 0;
 }

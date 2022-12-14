@@ -9,6 +9,8 @@ int main()
 	{
 		_putchar(r[i]);
 	}
+	
+	_putchar('\n');
 
 	return 0;
 }
