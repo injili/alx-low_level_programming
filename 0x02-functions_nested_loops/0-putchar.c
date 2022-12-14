@@ -2,7 +2,7 @@
 
 int main()
 {
-	char r[] = {"_putchar"i};
+	char r[] = {"_putchar"};
 	int i;
 
 	for (i = 0; i < 1; i++)
