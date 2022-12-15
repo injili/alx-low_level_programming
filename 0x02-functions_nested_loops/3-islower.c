@@ -8,12 +8,12 @@ int _islower(int c)
 	{
 		if (i == a)
 		{
-			return (1);
+			return 1;
 			break;
 		}
 		else if (i == 'z')
 		{
-			return (0);
+			return 0;
 		}
 		else
 		{

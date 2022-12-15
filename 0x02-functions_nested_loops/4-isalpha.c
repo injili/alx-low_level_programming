@@ -12,7 +12,7 @@ int _isalpha(int c)
 	{
 		if (q == y)
 		{
-			return (1);
+			return 1;
 			break;
 		}
 		else if (q == 'z')
@@ -33,12 +33,12 @@ void capital(char d)
 	{
 		if (d == w)
 		{
-			return (1);
+			return 1;
 			break;
 		}
 		else if (w == 'Z')
 		{
-			return (0);
+			return 0;
 			break;
 		}
 		else
