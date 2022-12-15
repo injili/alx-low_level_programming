@@ -2,27 +2,18 @@
 
 int main()
 {
-	int sum;
-	int a;
-
-	for (a = 3; a < 1024; ++a)
+	int i;
+	int a = 1;
+	int b = 2;
+	int c;
+	for (i = 0; i < 50; ++i)
 	{
-		int b,c;
-		b = a%3;
-		c = a%5;
+		printf("%d, ", a);
+		c = a+b;
+		a = b;
+		b = c;
 
-		if (b == 0)
-		{
-			sum = sum+a;
-		}
-		else
-		{
-			if (c == 0)
-				sum = sum+a;
-		}
 	}
-
-	printf("%d \n", sum);
-
+	printf("\n");
 	return 0;
 }
