@@ -1,16 +1,25 @@
 #include "main.h"
 
-int main()
-{
-	char r[] = {"_putchar"};
-	int i;
+/**
+ * main - contains the main prog
+ * @c: The character to print
+ *
+ * Return: On success 0
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
-	for (i = 0; i < 1; i++)
+int _putchar(char c);
+
+int main(void)
+{
+	char *r = "_putchar\n";
+
+	while (*r)
 	{
-		_putchar(r[i]);
+		_putchar(*r++);
 	}
-	
+
 	_putchar('\n');
 
-	return 0;
+	return (0);
 }

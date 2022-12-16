@@ -1,19 +1,28 @@
 #include "main.h"
 
-int _abs(int i);
+/**
+ * _abs - calculate absolute value
+ * @i: The character to passed
+ *
+ * Return: On success x.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+int _abs(int i)
 {
 	int x;
+
 	if (i > 0)
 	{
-		return i;
+		x = i;
 	}
-	else if (i = 0)
+	else if (i == 0)
 	{
-		return i;
+		x = i;
 	}
 	else
 	{
-		x = 0-i;
-		return x;
+		x = 0 - i;
 	}
+	return (x);
 }

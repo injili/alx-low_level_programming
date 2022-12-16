@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _isalpha - checks for alphabet charecters
+ * @c: The character to passed
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
 void capital(char d);
 
 int _isalpha(int c)
@@ -7,17 +15,18 @@ int _isalpha(int c)
 	char y = c;
 	char q;
 	char w;
+	int x;
 
 	for (q = 'a'; a <= 'z'; ++a)
 	{
 		if (q == y)
 		{
-			return 1;
+			x = 1;
 			break;
 		}
 		else if (q == 'z')
 		{
-			capital(y);
+			x = capital(y);
 			break;
 		}
 		else
@@ -25,6 +34,7 @@ int _isalpha(int c)
 			continue;
 		}
 	}
+	return (x);
 }
 
 void capital(char d)
@@ -33,12 +43,12 @@ void capital(char d)
 	{
 		if (d == w)
 		{
-			return 1;
+			x = 1;
 			break;
 		}
 		else if (w == 'Z')
 		{
-			return 0;
+			x = 0;
 			break;
 		}
 		else
