@@ -9,9 +9,9 @@
 
 int _atoi(char *s)
 {
-	int count = 0, size = 0, i = 0, p = 1, n = 1, j;
+	unsigned int count = 0, size = 0, i = 0, p = 1, n = 1, j;
 
-	while (*(s + count) == '-')
+	while (*(s + count) != '\0')
 	{
 		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 			break;
