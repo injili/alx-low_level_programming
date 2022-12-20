@@ -7,7 +7,7 @@
  * Return: multiplication value
  */
 
-int_atoi(char *s)
+int _atoi(char *s)
 {
 	int count = 0, size = 0, i = 0, p = 1, n = 1, j;
 
@@ -16,7 +16,7 @@ int_atoi(char *s)
 		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 			break;
 
-		if (*(s + count) =='-')
+		if (*(s + count) == '-')
 			p *= -1;
 
 		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
@@ -30,8 +30,8 @@ int_atoi(char *s)
 
 	for (j = count - size; j < count; j++)
 	{
-		i = i + ((*(s + j) - 48) * m);
-		m /= 10;
+		i = i + ((*(s + j) - 48) * n);
+		n /= 10;
 	}
 	return (i * p);
 }
