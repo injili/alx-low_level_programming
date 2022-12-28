@@ -1,4 +1,4 @@
-# 0xO0-hello_world
+# 0x00-hello_world
 [0-preprocessor](0-preprocessor) - command to process scripts written in C.
 
 [1-compiler](1-compiler) - compiles the C source code.
