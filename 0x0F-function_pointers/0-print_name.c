@@ -3,14 +3,13 @@
 /**
  * print_name - prints out a name
  * @name: pointer to the name
- * 
+ * @f: function pointer
+ *
+ * Return: no return value
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	int i;
-	for (i = 0; *(name + i) != '\0'; i++)
-	{
-		
-	}
+	if (name && f)
+		f(name);
 }
