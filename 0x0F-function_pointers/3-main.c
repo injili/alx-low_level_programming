@@ -10,21 +10,29 @@
 
 int main(int argc, int *argv[])
 {
+	int a, b;
+	int (*operation)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error");
 		exit(98);
 	}
-	else if (argv[2] != '', '', '*', '/', '%')
+	
+	if (argv[2][1])
 	{
 		printf("Error");
 		exit(99);
 	}
-	else if (argv[2] == 37, 47)
+
+	operations = get_op_func(argv[2]);
+
+	if (operation == NULL)
 	{
-		if (argv[3] == 0)
-		{
-			printf("Error");
+		printf("Error\n");
+		exit(98);
+	}
+	printf("Error");
 			exit(100);
 		}
 	}
