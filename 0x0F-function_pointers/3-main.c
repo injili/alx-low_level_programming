@@ -15,7 +15,7 @@ int main(int argc, int *argv[])
 		printf("Error");
 		exit(98);
 	}
-	else if (*(argv + 2) != 37, 42, 43, 45, 47)
+	else if (argv[2] != '', '', '*', '/', '%')
 	{
 		printf("Error");
 		exit(99);
