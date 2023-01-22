@@ -36,7 +36,7 @@ int main(int argc, int *argv[])
 		a = atoi(argv[1]);
 		b = atoi(argv[3]);
 
-		
+		operation(a, b);
 	}
 
 	return (x)
