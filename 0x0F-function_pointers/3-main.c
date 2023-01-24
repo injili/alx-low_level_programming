@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <ctype.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -15,13 +15,13 @@ int main(int argc, int *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
 	
 	if (argv[2][1])
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
 
@@ -32,20 +32,11 @@ int main(int argc, int *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	printf("Error");
-			exit(100);
-		}
-	}
-	else
-	{
-		int a;
-		int b;
 
-		a = atoi(argv[1]);
-		b = atoi(argv[3]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-		operation(a, b);
-	}
+	printf("%d\n", operation(a, b));
 
-	return (x)
+	return (0);
 }
