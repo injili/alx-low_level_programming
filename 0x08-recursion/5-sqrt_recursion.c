@@ -2,21 +2,22 @@
 
 /**
  * root_op - does the calculation
- * @a: input number
+ * @n: input number
  * @b: iterator
  *
  * Return: square root
  */
 
-int root_op(int a; int b)
+int root_op(int n, int b)
 {
-	if (b % (a / b) == 0)
+	if (b % (n / b) == 0)
 	{
-		if (b * (a / b) == a)
+		if (b * (n / b) == n)
 			return (b);
 		else
 			return (-1);
 	}
+	return (0 + root_op(n, b + 1));
 }
 
 /**
@@ -30,10 +31,10 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	else if (n < 0)
+	if (n < 0)
 		return (-1);
-	else if (n == 1)
+	if (n == 1)
 		return (1);
-	else
-		return (root_op(n, 2));
+
+	return (root_op(n, 2));
 }
