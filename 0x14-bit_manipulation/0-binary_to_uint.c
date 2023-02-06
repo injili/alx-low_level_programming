@@ -9,25 +9,34 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x;
-	int i = 0, y = 2;
+	unsigned int num = 0, i = 0;
+	int count = 0;
 
-	if (b == NULL)
+	while (*(b + count) != '\0')
+		count++;
+
+	if (count < 1)
 		return (0);
 
-	while (*b != NULL)
+	count--;
+	while (count >= 0)
 	{
-		if (*(b + i) != 1 || *(b + i) != 0)
-			return (0);
-		if (*(b + i) == 1)
+		if (*(b + count) == '1')
 		{
-		temp = 1 * 2**i;
+			num += 1 << i;
+		}
+		else if (*(b + count) == '0')
+		{
+			num += 0;
 		}
 		else
 		{
+			return (0);
 		}
+
 		i++;
+		count--;
 	}
 
-	return (x);
+	return (num);
 }
