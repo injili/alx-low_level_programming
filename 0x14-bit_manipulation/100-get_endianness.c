@@ -6,7 +6,7 @@
  * Return: integer value. 1 if little endian and 0 if big endian
  */
 
-int get_endianess(void)
+int get_endianness(void)
 {
 	unsigned int x = 1;
 	int i;
