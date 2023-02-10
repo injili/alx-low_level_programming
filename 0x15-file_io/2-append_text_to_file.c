@@ -1,6 +1,6 @@
 #include <fcntl.h>
 #include <stdlib.h>
-#include <unistd>
+#include <unistd.h>
 #include <stddef.h>
 
 /**
@@ -13,7 +13,7 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, letters. wr;
+	int fd, letters, wr;
 
 	if (!filename)
 		return (-1);
