@@ -21,6 +21,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		if (index == count)
 		{
+			if (get_node == NULL)
+				return (NULL);
 			get_node->n = head->n;
 			get_node->prev = head->prev;
 			get_node->next = head->next;
