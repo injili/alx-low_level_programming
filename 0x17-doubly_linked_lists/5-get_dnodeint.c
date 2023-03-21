@@ -16,11 +16,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *get_node;
 
 	count = 0;
-	get_node = malloc(sizeof(dlistint_t));
 	while (head != NULL)
 	{
 		if (index == count)
 		{
+			get_node = malloc(sizeof(dlistint_t));
 			if (get_node == NULL)
 				return (NULL);
 			get_node->n = head->n;
