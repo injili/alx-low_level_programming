@@ -1,5 +1,5 @@
 # 0x00-hello_world
-For a start, let's learn the commands used in execution of C files and a few C programms.
+The directory contains script files that contain commands used to execute C programs..
 1. [0-preprocessor](0-preprocessor) - runs a C file through a preprocessor and saves the results into another file.
 2. [1-compiler](1-compiler) - compiles a C code without linking.
 3. [2-assembler](2-assembler) - generates a C code assembly code saving it in an output file.
