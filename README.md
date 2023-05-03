@@ -6,4 +6,5 @@
 5. [0x04-more_functions_nested_loops](0x04-more_functions_nested_loops) - More code samples on functions in C are found in this folder.
 6. [0x05-pointers_arrays_strings](0x05-pointers_arrays_strings) - Directory with code on pointers, arrays and string usage in C.
 7. [0x06-pointers_arrays_strings](0x06-pointers_arrays_strings) - More code on pointers, arrays and strings in C.
-8. [0x07-pointers_arrays_strings](0x07-pointers_arrays_strings) - Yet more scripts on pointers, arrays and strings in C.
+8. [0x07-pointers_arrays_strings](0x07-pointers_arrays_strings) - Yet more scripts on pointers, arrays and strings in C.i
+9. [0x09-recursion](0x09-recursion) - This directory contains projects on recursion in C and its application
