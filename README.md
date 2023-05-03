@@ -7,4 +7,8 @@
 6. [0x05-pointers_arrays_strings](0x05-pointers_arrays_strings) - Directory with code on pointers, arrays and string usage in C.
 7. [0x06-pointers_arrays_strings](0x06-pointers_arrays_strings) - More code on pointers, arrays and strings in C.
 8. [0x07-pointers_arrays_strings](0x07-pointers_arrays_strings) - Yet more scripts on pointers, arrays and strings in C.i
-9. [0x09-recursion](0x09-recursion) - This directory contains projects on recursion in C and its application
+9. [0x09-recursion](0x09-recursion) - This directory contains projects on recursion in C and its application.
+10. [0x0A-argc_argv](0x0A-argc_argv) - Projects focusing on passing arguments to program scripts.
+11. [0x0B-malloc_free](0x0B-malloc_free) - This directory contains C files that focus on the use of malloc in memory allocation.
+12. [0x0C-more_malloc_free](0x0C-more_malloc_free) - More projects on the implementation of malloc
+13. [0x0D-preprocessor](0x0D-preprocessor) - Implementation of the concept of preprocessing in C.
