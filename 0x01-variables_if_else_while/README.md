@@ -16,6 +16,6 @@
 - What is the ASCII character set
 - What are the purpose of the gcc flags -m32 and -m64
 ## Tasks
-- [0. Positive anything is better than negative nothing](0-positive_or_negative.c) - A program to assign a random number to the variable n each time it is executed
-- [1. The last digit](1-last_digit.c) - A program that prints the last digit assigned to the number stored in the variable.
-- [2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](2-print_alphabet.c) - A program that prints out the alphabet in lowercase.
+[0. Positive anything is better than negative nothing](0-positive_or_negative.c) - A program to assign a random number to the variable n each time it is executed.  
+[1. The last digit](1-last_digit.c) - A program that prints the last digit assigned to the number stored in the variable.  
+[2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](2-print_alphabet.c) - A program that prints out the alphabet in lowercase.  
