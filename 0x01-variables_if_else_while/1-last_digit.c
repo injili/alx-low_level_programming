@@ -1,9 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* 
+ * main - the main function of the program
+ * @void - the function main receives no arguments
+ * 
+ * Return - the function returns 0 on successfull execution
+ */
+
+
 int main(void)
 {
 	int n;
