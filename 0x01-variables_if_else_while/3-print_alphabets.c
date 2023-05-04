@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-int main()
+/*
+ * main - the main function of the program. 
+ * @void - the function receives no argument. 
+ *
+ * Return - the function returns 0 on successful execution. 
+ */
+
+int main(void)
 {
 	int i;
 	int j;
