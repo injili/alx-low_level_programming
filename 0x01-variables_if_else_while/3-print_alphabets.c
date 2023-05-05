@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-/*
- * main - the main function of the program. 
- * @void - the function receives no argument. 
+/**
+ * main - the main function of the program
+ * @void: the function receives no argument
  *
- * Return - the function returns 0 on successful execution. 
+ * Return: 0 on successful execution
  */
 
 int main(void)
 {
 	int i;
 	int j;
+
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		putchar(i);
@@ -20,5 +21,6 @@ int main(void)
 		putchar(j);
 	}
 	putchar('\n');
-	return(0);
+
+	return (0);
 }
