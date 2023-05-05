@@ -1,17 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/*
+/**
  * main - the main function of the program
- * @void - the function receives no arguments
+ * @void: the function receives no arguments
  *
- * Return - the function returns 0 if executed properly. 
+ * Return: the function returns 0 on successful execution
  */
-
-
-
-
 int main(void)
 {
 	int n;
@@ -22,7 +17,7 @@ int main(void)
 		printf("%d is positive\n", n);
 	else if (n < 0)
 		printf("%d is negative\n", n);
-	else 
+	else
 		printf("%d is zero\n", n);
 	return (0);
 }
