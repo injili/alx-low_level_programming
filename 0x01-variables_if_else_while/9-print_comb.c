@@ -1,6 +1,11 @@
 #include <stdio.h>
-
-int main()
+/**
+ * main - the main program function
+ * @void: no argument passed to function main
+ *
+ * Return: 0 on successful execution
+ */
+int main(void)
 {
 	int number;
 
@@ -9,7 +14,7 @@ int main()
 		putchar((number % 10) + '0');
 		if (number == 9)
 			continue;
-		
+
 		putchar(',');
 		putchar(' ');
 	}
