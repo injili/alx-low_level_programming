@@ -1,44 +1,18 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabet charecters
- * @c: The character to passed
+ * capital - checks for uppercase alphabet charecters
+ * @d: The character passed to the function on calling
  *
- * Return: On success 0.
+ * Return: 0 on success
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-void capital(char d);
-
-int _isalpha(int c)
+int capital(char d)
 {
-	char y = c;
-	char q;
-	char w;
 	int x;
+	char w;
 
-	for (q = 'a'; a <= 'z'; ++a)
-	{
-		if (q == y)
-		{
-			x = 1;
-			break;
-		}
-		else if (q == 'z')
-		{
-			x = capital(y);
-			break;
-		}
-		else
-		{
-			continue;
-		}
-	}
-	return (x);
-}
-
-void capital(char d)
-{
 	for (w = 'A' ; w <= 'Z'; ++w)
 	{
 		if (d == w)
@@ -51,9 +25,36 @@ void capital(char d)
 			x = 0;
 			break;
 		}
-		else
+	}
+	return (x);
+}
+
+/**
+ * _isalpha - checks for alphabet charecters
+ * @c: The character to passed
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+int _isalpha(int c)
+{
+	char y = c;
+	char q;
+	int x;
+
+	for (q = 'a'; q <= 'z'; q++)
+	{
+		if (q == y)
 		{
-			continue;
+			x = 1;
+			break;
+		}
+		else if (q == 'z')
+		{
+			x = capital(y);
+			break;
 		}
 	}
+	return (x);
 }
