@@ -1,6 +1,11 @@
 #include "main.h"
-
-void jack_bauer(void);
+/**
+ * jack_bauer - prints out every minute of the day from 00:00 to 23:59
+ * @void: function receives no arguments at all
+ *
+ * Return: no return value
+ */
+void jack_bauer(void)
 {
 	int minute, hour;
 
@@ -8,11 +13,11 @@ void jack_bauer(void);
 	{
 		for (minute = 0; minute < 60 ; ++minute)
 		{
-			_putchar(hour/10);
-			_putchar(hour%10);
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
 			_putchar(':');
-			_putchar(minutes/10);
-			_putchar(minutes%10);
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) +'0');
 			_putchar('\n');
 		}
 	}
