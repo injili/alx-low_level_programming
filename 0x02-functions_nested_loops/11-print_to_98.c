@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * print_to_98 - prints natural numbers upto 98
  * @n: number passed to the function
@@ -11,21 +12,10 @@ void print_to_98(int n)
 	{
 		for (; n > 97; --n)
 		{
-			if (n >= 100)
-			{
-				_putchar((n / 100) + '0');
-				_putchar(((n / 10) % 10) + '0');
-				_putchar((n % 10) + '0');
-			}
-			else
-			{
-				_putchar((n / 10) + '0');
-				_putchar((n % 10) + '0');
-			}
+			printf("%d", n);
 			if (n != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 		}
 	}
@@ -33,14 +23,12 @@ void print_to_98(int n)
 	{
 		for (; n < 99; ++n)
 		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
+			printf("%d", n);
 			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
+				{
+					printf(", ");
+				}
+		{
 	}
-	_putchar('\n');
+	printf("\n");
 }
