@@ -42,24 +42,26 @@ void print_to_98(int n)
 	{
 		for (; n < 99; n++)
 		{
+			a = n;
 			if (n < 0)
 			{
 				_putchar('-');
-				a = -n;
-			}
-			else
-			{
-				a = n;
+				a = -a;
 			}
 			if (a < 10)
 			{
 				_putchar(a + '0');
 			}
-			else
+			else if (a < 100)
 			{
 				_putchar((a / 10) + '0');
 				_putchar((a % 10) + '0');
 			}
+			else
+			{
+				_putchar((a / 100) + '0');
+				_putchar(((a / 10) % 10) + '0');
+				_putchar((a % 10) + '0');
 			if (n != 98)
 			{
 				_putchar(',');
