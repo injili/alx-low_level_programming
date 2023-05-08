@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * times_tables - a function that prints the times table of 9
+ * times_table - a function that prints the times table of 9
  * @void: the function receives no arguments
  *
  * Return: no return value
@@ -11,7 +11,7 @@ void times_table(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for(a = 0; a < 10; a++)
+		for (a = 0; a < 10; a++)
 		{
 			x = a * i;
 			if (a == 0)
@@ -38,11 +38,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(x + '0');
 			}
-			if (a == 9)
-			{
-				continue;
-			}
-			else
+			if (a != 9)
 			{
 				_putchar(',');
 			}
