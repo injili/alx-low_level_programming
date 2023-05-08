@@ -1,22 +1,53 @@
-#includes "main.h"
-
-void times_tables(void)
+#include "main.h"
+/**
+ * times_tables - a function that prints the times table of 9
+ * @void: the function receives no arguments
+ *
+ * Return: no return value
+ */
+void times_table(void)
 {
-	int i;
-	int a;
-	int x;
+	int i, a, x;
 
-	for (i = 0; i < 10; ++i)
+	for (i = 0; i < 10; i++)
 	{
-		for(a = 0; a < 10; ++a)
+		for(a = 0; a < 10; a++)
 		{
-			x = i*a;
-			_putchar(x);
-			_putchar(', ');
+			x = a * i;
+			if (a == 0)
+			{
+				if (i == 0)
+				{
+					_putchar(x + '0');
+				}
+				else
+				{
+					_putchar('\n');
+					_putchar(x + '0');
+				}
+			}
+			else if (x >= 10)
+			{
+				_putchar(' ');
+				_putchar((x / 10) + '0');
+				_putchar((x % 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(x + '0');
+			}
+			if (a == 9)
+			{
+				continue;
+			}
+			else
+			{
+				_putchar(',');
+			}
 		}
-
-		_putchar('$');
-		_putchar('\n');
 	}
-	return 0;
+	_putchar('\n');
+
 }
