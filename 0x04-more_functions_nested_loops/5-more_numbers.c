@@ -10,8 +10,7 @@
 
 void more_numbers(void)
 {
-	int a;
-	int b;
+	int a, b, c, i;
 
 	for (a = 0; a < 10; a++)
 	{
@@ -23,9 +22,16 @@ void more_numbers(void)
 			}
 			else
 			{
-				_putchar((b / 10) + '0');
-				_putchar((b % 10) + '0');
+				for (i = 0; i < 2; i++)
+				{
+					if (i == 0)
+						c = b / 10;
+					else
+						c = b % 10;
+					_putchar(c + '0');
+				}
 			}
 		}
+		_putchar('\n');
 	}
 }
