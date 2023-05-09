@@ -2,15 +2,16 @@
 
 /**
  * more_numbers - outputs rows of 15 numbers 0 to 14
+ * @void: no argument is passed to the function
  *
- * Return: On success 0.
+ * Return: 0 on success.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
 void more_numbers(void)
 {
-	long int a;
-	long int b;
+	int a;
+	int b;
 
 	for (a = 0; a < 10; a++)
 	{
@@ -22,8 +23,8 @@ void more_numbers(void)
 			}
 			else
 			{
-				_putchar(b / 10 + '0');
-				_putchar(b % 10 + '0');
+				_putchar((b / 10) + '0');
+				_putchar((b % 10) + '0');
 			}
 		}
 		_putchar('\n');
