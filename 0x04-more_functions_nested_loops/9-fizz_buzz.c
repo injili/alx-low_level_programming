@@ -10,22 +10,18 @@
 int main(void)
 {
 	int a;
-	int b;
-	int c;
 
 	for (a = 1; a <= 100; a++)
 	{
-		b = a % 3;
-		c = a % 5;
-		if (b == 0 && c == 0)
+		if (!(a % 3) && !(a % 5))
 		{
 			printf("FizzBuzz ");
 		}
-		else if (b == 0)
+		else if (!(a % 3))
 		{
 			printf("Fizz ");
 		}
-		else if (c == 0)
+		else if (!(a % 5))
 		{
 			printf("Buzz ");
 		}
@@ -33,7 +29,7 @@ int main(void)
 		{
 			printf("%d ", a);
 		}
-		printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
