@@ -23,7 +23,7 @@
 
 ## Requirements
 - All the files are compiled on `Ubuntu 20.04 LTS` using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`.
-- The code uses the `Betty` style. Checked uing `betty-style.pl and betty-doc.pl`.
+- The code uses the `Betty` style. Checked using `betty-style.pl and betty-doc.pl`.
 - [_putchar.c]( _putchar.c) is used to write the output.
 - In the examples, the main.c files are shown as examples. You can use them to test the functions.
 - [main.h](main.h) - The custom header file.
