@@ -9,6 +9,16 @@
 
 char *rot13(char *c)
 {
-	int a;
+	int i;
+
+	for (i = 0; c[i] != '\0'; i++)
+	{
+		if ((c[i + 1] >= 'A' && c[i + 1] < 'N') ||
+		(c[i + 1] >= 'a'  && c[i + 1] < 'n'))
+			c[i + 1] = c[i + 1] + 13;
+		else if ((c[i + 1] > 'M' && c[i + 1] <= 'Z') ||
+		(c[i + 1] > 'm' && c[i + 1] <= 'z'))
+			c[i + 1] = c[i + 1] - 13;
+	}
 	return (c);
 }
