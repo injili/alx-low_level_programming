@@ -9,15 +9,14 @@
 
 char *cap_string(char *c)
 {
-	int i = 0;
-	int j;
+	int j, i = 0;
 	int sep[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	while (*(c + i) != '\0')
 	{
 		j = 0;
 
-		while (*(sep + i) != '\0')
+		while (*(sep + j) != '\0')
 		{
 			if (*(c + i) == sep[j])
 			{
