@@ -9,47 +9,19 @@
 
 char *leet(char *c)
 {
-	int i = -1;
+	int i, j;
+	char leet[] = {'4', '3', '0', '7', '1'};
+	char orig[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
 
-	while (*c)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		i++;
-		if (*(c + i) == '\0')
-			break;
-
-		if (*(c + i) >= 'a' && *(c + i) <= 'z')
+		for (j = 0; j < 10; j++)
 		{
-			if (c[i] == 'a')
-				c[i] = '4';
-			else if (c[i] == 'e')
-				c[i] = '3';
-			else if (c[i] == 'o')
-				c[i] = '0';
-			else if (c[i] == 't')
-				c[i] = '7';
-			else if (c[i] == 'l')
-				c[i] = '1';
-			else
-				continue;
-		}
-		else if (*(c + i) >= 'A' && *(c + i) <= 'Z')
-		{
-			if (c[i] == 'A')
-				c[i] = '4';
-			else if (c[i] == 'E')
-				c[i] = '3';
-			else if (c[i] == 'O')
-				c[i] = '0';
-			else if (c[i] == 'T')
-				c[i] = '7';
-			else if (c[i] == 'L')
-				c[i] = '1';
-			else
-				continue;
-		}
-		else
-		{
-			continue;
+			if (c[i] == orig[j])
+			{
+				c[i] = leet[j % 5];
+				break;
+			}
 		}
 	}
 	return (c);
