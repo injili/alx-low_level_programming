@@ -14,18 +14,11 @@ char *_strpbrk(char *s, char *accept)
 
 	for (i = 0; *(s + i) != '\0' ; i++)
 	{
-		int k = 0;
-
 		for (j = 0; *(accept + j) != '\0' ; j++)
 		{
 			if (*(s + i) == *(accept + j))
-			{
-				k = 1;
-				break;
-			}
+				return (s + i);
 		}
-		if (k == 1)
-			break;
 	}
-	return (s + i);
+	return ((void *)0);
 }
