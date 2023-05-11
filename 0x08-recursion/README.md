@@ -17,3 +17,11 @@
 [7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything](100-is_palindrome.c) - A function that returns `1` if the string passed is a palindrome and `0` if not.  
 [8. Inception. Now, before you bother telling me it's impossible...](101-wildcmp.c) - A function thet compares two strings and returns `1` if the strings can be considered identical, otherwise `0`.  
 
+## Requirements
+- No loops are to be used in the code.
+- You are not allowed to use `static` variables. 
+- All the files are compiled on `Ubuntu 20.04 LTS` using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`.
+- The code uses the `Betty` style. Checked using `betty-style.pl` and `betty-doc.pl`.
+- [_putchar.c](_putchar.c) is used to write the output.
+- In the examples, the `-main.c` files are shown as examples. You can use them to test the functions.
+- [main.h](main.h) - The custom header file.
