@@ -4,16 +4,12 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, sum, sum1;
+	int i, sum0 = 0, sum1 = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		sum += *(a + i);
+		sum0 += *(a + i * size + i);
+		sum1 += *(a + i * size + (size - i - 1));
 	}
-	printf("%d, ", sum);
-	for (i = size - 1; i >= 0; i--)
-	{
-		sum1 += a[i][i];
-	}
-	printf("%d", sum1)
+	printf("%d, %d\n", sum0, sum1);
 }
