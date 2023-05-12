@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
+ * print_diagsums - prints the sum of diagonal numbers in a 2D string
+ * @a: the string passed to the function
+ * @size: the size of the string
+ *
+ * Return: no return value
  */
 void print_diagsums(int *a, int size)
 {
