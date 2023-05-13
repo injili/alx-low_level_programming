@@ -9,12 +9,17 @@
  */
 int main(int argc, char *argv [])
 {
-	if (argc == 1)
-		_putchar('0');
-	char *str = argv[1];
-	if (!isdigit(*str))
+	if (argc != 2)
 	{
-		_putchar("Error');
+		printf("Error\n");
+		return (1);
+	}
+	int cent = 0;
+	
+	cent = atoi(argv[1]);
+	if (cent < 0)
+
+		printf("0\n");
 
 	return (0);
 }
