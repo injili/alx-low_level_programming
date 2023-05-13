@@ -15,11 +15,31 @@ int main(int argc, char *argv [])
 		return (1);
 	}
 	int cent = 0;
-	
+	int count;
+
 	cent = atoi(argv[1]);
 	if (cent < 0)
-
 		printf("0\n");
 
+	if (cent > 25)
+	{
+		count += cent / 25;
+		cent = cent % 25;
+	}
+	if (cent > 10)
+	{
+		count += cent / 10;
+		cent = cent % 10;
+	}
+	if (cent > 5)
+	{
+		count += cent / 5;
+		cent = cent % 5;
+	}
+	if (cent >= 1)
+	{
+		count += cent
+	}
+	printf("count");
 	return (0);
 }
