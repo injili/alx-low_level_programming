@@ -10,14 +10,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int cent = atoi(argv[1]);
-	int count = 0;
+	int cent, count;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	cent = atoi(argv[1]);
+	count = 0;
 	if (cent < 0)
 	{
 		printf("0\n");
