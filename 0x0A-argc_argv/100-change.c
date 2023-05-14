@@ -38,7 +38,7 @@ int main(int argc, char *argv [])
 	}
 	if (cent >= 1)
 	{
-		count += cent
+		count += cent;
 	}
 	printf("count");
 	return (0);
