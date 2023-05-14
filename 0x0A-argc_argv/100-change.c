@@ -8,7 +8,7 @@
  *
  * Return: 0 on successful execution
  */
-int main(int argc, char *argv [])
+int main(int argc, char *argv[])
 {
 	int cent = 0;
 	int count = 0;
