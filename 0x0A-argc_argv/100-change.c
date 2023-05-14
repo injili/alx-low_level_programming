@@ -21,8 +21,10 @@ int main(int argc, char *argv[])
 
 	cent = atoi(argv[1]);
 	if (cent < 0)
+	{
 		printf("0\n");
-
+		exit(0);
+	}
 	if (cent >= 25)
 	{
 		count += cent / 25;
