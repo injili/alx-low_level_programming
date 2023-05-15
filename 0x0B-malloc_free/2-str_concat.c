@@ -37,14 +37,10 @@ char *str_concat(char *s1, char *s2)
 		{
 			s[i] = *(s1 + i);
 		}
-		else if (i < n - 1)
+		else
 		{
 			s[i] = *(s2 + l);
 			l++;
-		}
-		else
-		{
-			s[i] = '\0';
 		}
 	}
 	return (s);
