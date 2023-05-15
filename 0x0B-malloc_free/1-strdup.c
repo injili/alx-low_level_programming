@@ -4,7 +4,7 @@
 /**
  * _strdup - returns a pointer to a newly created string
  * @str: the string passed to the function
- * 
+ *
  * Return: pointer s to the string
  */
 
