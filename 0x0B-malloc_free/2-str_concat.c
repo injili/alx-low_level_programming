@@ -24,13 +24,12 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	for (i = 0; *(s2 + i) != 0; i++)
 		k++;
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-	n = j + k + 1;
 
+	n = j + k + 1;
 	s = malloc(sizeof(char) * n);
 	if (s == NULL)
 		return (NULL);
+
 	for (i = 0; i < n; i++)
 	{
 		if (i < j)
