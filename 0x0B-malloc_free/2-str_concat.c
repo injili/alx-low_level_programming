@@ -14,16 +14,16 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	int i, j = 0, k = 0, l = 0, n;
 
-	if (s1 != NULL)
-	{
-		for (i = 0; *(s1 + i) != 0; i++)
-			j++;
-	}
-	if (s2 != NULL)
-	{
-		for (i = 0; *(s2 + i) != 0; i++)
-			k++;
-	}
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s1 == NULL)
+		s2 = "";
+
+	for (i = 0; *(s1 + i) != 0; i++)
+		j++;
+	for (i = 0; *(s2 + i) != 0; i++)
+		k++;
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 	n = j + k + 1;
