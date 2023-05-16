@@ -1,3 +1,12 @@
+/*
+ *       (_)
+ *  \____/..
+ *   (___/\/
+ *   || ||
+ *
+ *   injili
+ */
+
 #include "main.h"
 #include <stdlib.h>
 
@@ -11,6 +20,18 @@
 
 int *array_range(int min, int max)
 {
-	int *s;
-	return (s);
+	int *mem, range, index;
+
+	if (min > max)
+		return (NULL);
+
+	range = max - (min + 1);
+	mem = malloc(sizeof(int) * range);
+	for (index = 0; index <= range; index++)
+	{
+		mem[index] = min;
+		min++;
+	}
+
+	return (mem);
 }
