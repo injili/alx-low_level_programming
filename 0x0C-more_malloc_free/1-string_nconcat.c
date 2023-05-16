@@ -5,6 +5,7 @@
  * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
+ * @n: the number of characters to be picked from string 2
  *
  * Return: the pointer to the new string
  */
@@ -33,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s == NULL)
 		return (NULL);
 
-	while ( k < i && s1[k] != '\0')
+	while (k < i && s1[k] != '\0')
 	{
 		s[k] = s1[k];
 		k++;
