@@ -27,6 +27,9 @@ int *array_range(int min, int max)
 
 	range = max - min + 1;
 	mem = malloc(sizeof(int) * range);
+	if (mem == NULL)
+		return (NULL);
+
 	for (index = 0; index < range; index++)
 	{
 		mem[index] = min;
