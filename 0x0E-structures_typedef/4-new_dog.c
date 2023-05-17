@@ -5,14 +5,13 @@
  * new_dog - creates a new dog
  * @name:  the new dog name
  * @age: the new dog age
- * @owner: who owns the new dog?
- * 
+ * @owner: who owns the new dog
+ *
  * Return: Null if function fails
  */
 
-dog_t *new_dog(char *name, float age __attribute__((unused)), char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-
 	dog_t *p_dog;
 	int i, lname, lowner;
 
@@ -47,6 +46,7 @@ dog_t *new_dog(char *name, float age __attribute__((unused)), char *owner)
 	for (i = 0; i < lowner; i++)
 		p_dog->owner[i] = owner[i];
 	p_dog->owner[i] = '\0';
+	p_dog->age = age;
 
 	return (p_dog);
 }
