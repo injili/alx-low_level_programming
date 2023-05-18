@@ -2,7 +2,7 @@
 #include "3-calc.h"
 
 /**
- * get_op_function - gets the the function that matches the operation asked for
+ * get_op_func - gets the the function that matches the operation asked for
  * @s: the operator passed as argument to the program
  *
  * Return: a pointer to the function required
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while(ops[i].op != NULL)
+	while (ops[i].op != NULL)
 	{
 		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
