@@ -1,14 +1,13 @@
-#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "3-calc.h"
 /**
  * main -  the main function of the operations
  *
  * Return:0
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*func)(int, int);
@@ -33,6 +32,6 @@ int main(int argc, int *argv[])
 		printf("Error\n");
 		return (100);
 	}
-	printf("%d\n", func(a, b);
+	printf("%d\n", func(a, b));
 	return (0);
 }
