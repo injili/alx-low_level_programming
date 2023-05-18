@@ -5,16 +5,16 @@
 #include <stddef.h>
 
 /**
- * struct name- definition
+ * struct op - the struct that finds the operation
  *
- * @op: definion
- * @f: definition
+ * @op: the operation
+ * @f: function pointer
  */
 typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
-}op_t;
+} op_t;
 
 int (*get_op_func(char *s))(int, int);
 
