@@ -22,14 +22,14 @@ int binary_search(int *array, size_t size, int value)
 	while (l <= h)
 	{
 		printf("Search in array:");
-		x = l;
-		for (x = l; x < h; x++)
+
+		for (x = l; x <= h; x++)
 		{
-			printf(" %d", array[x]);
 			if (x != h)
-				printf(",");
+				printf(" %d,", array[x]);
+			else
+				printf(" %d\n", array[x]);
 		}
-		printf("\n");
 
 		m = (h + l) / 2;
 
