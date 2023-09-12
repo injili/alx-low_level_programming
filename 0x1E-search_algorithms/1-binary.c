@@ -3,6 +3,26 @@
 # include "search_algos.h"
 
 /**
+ * print_message - The function to print the output on the terminal
+ * @array: pointer to the first element of the array
+ * @x: the current least integer
+ * @h: the highest integer value
+ *
+ * Return: no return value
+ */
+void print_message(int *array, int x, int h)
+{
+	printf("Search in array: ");
+	for (; x <= h; x++)
+	{
+		if (x != h)
+			printf("%d, ", array[x]);
+		else
+			printf("%d\n", array[x]);
+	}
+}
+
+/**
  * binary_search - The function that searches for a value in a
  * sorted array using Binary Search Algorithm
  * @array: The pointer to the first integer to the array
@@ -14,22 +34,14 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	int l = 0, h = size - 1, x = 0, m;
+	int l = 0, h = size - 1, m;
 
-	if (array == NULL)
+	if (!array)
 		return (-1);
 
 	while (l <= h)
 	{
-		printf("Search in array:");
-
-		for (x = l; x <= h; x++)
-		{
-			if (x != h)
-				printf(" %d,", array[x]);
-			else
-				printf(" %d\n", array[x]);
-		}
+		print_message(array, l, h);
 
 		m = (h + l) / 2;
 
